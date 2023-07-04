@@ -22,48 +22,6 @@
     color: #fff;
   }
   
-  /* .container {
-      background-color: var(--premeri);
-      width: 100vw;
-      height: 20vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1rem;
-  }
-  
-  .search-box { 
-     display: inline-flex;
-     align-items: center;
-     background-color: #fff;
-     padding: 8px 16px;
-     border-radius: 40px;
-  }
-  
-  .search-box .search-icon {
-      font-size: 1.18rem;
-      color: var(--premeri);
-  }
-  
-  .search-box .search-input {
-      transition: .5s;
-      width: 0px;
-      overflow: hidden;
-  }
-  
-  .search-input .input {
-      border: none;
-      outline: none;
-      background-color: unset;
-      padding: 8px;
-      font-weight: bold;
-  }
-  
-  .search-box:hover .search-input{
-      width: 200px;
-      margin-left: 8px;
-  }*/
-  
   /* Navbar */
   .navbar {
     display: flex;
@@ -193,13 +151,15 @@
   /* About Section */
   .about,
   .product,
-  .kontak {
+  .kontak,
+  .container {
     padding: 7rem 7% 1.4rem;
   }
   
   .about h2,
   .product h2,
-  .kontak h2 {
+  .kontak h2,
+  .container {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
@@ -207,7 +167,8 @@
   
   .about h2 span,
   .product h2 span,
-  .kontak h2 span {
+  .kontak h2 span,
+  .container {
     color: var(--premeri);
   }
   
@@ -223,23 +184,23 @@
     width: 90%;
   }
   
-  .about .row .content {
+  .about .row .content1{
     flex: 1 1 35rem;
     padding: 0 1rem;
   }
   
-  .about .row .content h3 {
+  .about .row .content1 h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
-  .about .row .content p {
+  .about .row .content1 p {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
   
-  .about .row .content h3 span {
+  .about .row .content1 h3 span {
     color: var(--premeri);
   }
   
@@ -278,6 +239,19 @@
     font-size: 1.5rem;
   }
   
+  /* Gallery */
+  .gallery-img {
+    border-radius: 10%;
+    width: 80%;
+  }
+
+  #gallery .row > * {
+    padding: 0;
+  }
+  
+  
+
+
   /* kontak Section */
   
   .kontak .row {
@@ -393,7 +367,7 @@
       font-size: 55%;
     }
     #menu {
-      display: inline-block;
+      display: inline-table;
     }
   
     .navbar .navbar-nav {
