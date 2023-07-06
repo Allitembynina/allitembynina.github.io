@@ -74,7 +74,7 @@
   
   .navbar .navbar-extra a {
     color: #fff;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
   }
   
   .navbar .navbar-extra a:hover {
@@ -91,7 +91,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("../img/people joar.jpg");
+    background-image: url("../img/paket\ joar12.jpg");
     background-repeat: no-repeat;
     background-size: center;
     background-position: center;
@@ -130,8 +130,9 @@
   
   .hero .content p {
     font-size: 1.6rem;
+    font-weight: bold;
     line-height: 1.4;
-    color: #fff;
+    color: #78e983
   }
   
   .hero .content .cta {
@@ -176,31 +177,36 @@
     display: flex;
   }
   
-  .about .row .about-img {
+  .about .row .about-img,
+  .manfaat img {
     flex: 1 1 45rem;
   }
   
-  .about .row .about-img img {
+  .about .row .about-img img,
+  .manfaat img {
     width: 90%;
   }
   
-  .about .row .content1{
+  .about .row .content1 {
     flex: 1 1 35rem;
     padding: 0 1rem;
   }
   
-  .about .row .content1 h3 {
+  .about .row .content1 h3,
+  .manfaat1 h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
   .about .row .content1 p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    margin-top: 0.5rem;
   }
   
-  .about .row .content1 h3 span {
+  .about .row .content1 h3 span,
+  .manfaat1 h3 span {
     color: var(--premeri);
   }
   
@@ -216,37 +222,55 @@
     max-width: 30rem;
     margin: auto;
   }
+
+  .product .isi {
+    font-size: 1.3rem;
+  }
   
   .product .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 4rem;
     justify-content: center;
   }
   
   .product .row .product-cart {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
   }
   
   .product .row .product-cart img {
-    border-radius: 50%;
-    width: 80%;
+    border-radius: 10%;
+    width: 100%;
   }
   
   .product .row .product-cart .product-cart-title {
-    margin-top: 0.3rem auto 0.3rem;
-    font-size: 1.5rem;
+    margin-top: 0.3rem auto 1rem;
+    font-size: 2.5rem;
+  }
+
+  .product .row .product-cart .product-cart-price {
+    font-size: 2rem;
+  }
+
+  .product .row .product-cart .product-cart-price:hover {
+   color: var(--premeri);
   }
   
   /* Gallery */
-  .gallery-img {
-    border-radius: 10%;
-    width: 80%;
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
   }
-
-  #gallery .row > * {
-    padding: 0;
+  .container .row .col-md-3 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .container .row .gallery-img {
+    border-radius: 10%;
+    width: 90%;
   }
   
 
@@ -382,7 +406,8 @@
       flex-wrap: wrap;
     }
   
-    .about .row .about-img img {
+    .about .row .about-img img,
+    .manfaat img {
       height: 24rem;
       object-fit: cover;
       object-position: center;
